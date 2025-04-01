@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+#include <cstdlib>
 #include <iostream>
 #include "Calculator.h"
 using namespace std;
@@ -26,10 +26,7 @@ long long Calculator::LCM(long long a, long long b)
         else
             maxi++;
     }
-=======
-#include "Calculator.h"
-#include <iostream>
-#include <cstdlib>
+}
 
 double Calculator::subtract(double a, double b) {
     return a - b;
@@ -66,5 +63,4 @@ long long Calculator::Random(long long a, long long b) {
         return a;
     }
     return rand() % (b - a + 1) + a;
->>>>>>> 92ebd77f8df3957e9f989a70e4ed87fabd394d1e
 }

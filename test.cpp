@@ -1,4 +1,5 @@
 #include "Calculator.h"
+#include "Calculator.cpp"
 #include <iostream>
 using namespace std;
 
@@ -13,6 +14,6 @@ int main() {
     cout << "GCD of 24 and 18: " << calc.GCD(24, 18) << endl;
     cout << "LCM of 4 and 6: " << calc.LCM(4, 6) << endl;
     cout << "Random number between 1 and 10: " << calc.Random(1, 10) << endl;
-    
+
     return 0;
 }

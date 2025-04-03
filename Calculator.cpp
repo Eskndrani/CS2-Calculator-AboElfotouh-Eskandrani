@@ -15,17 +15,7 @@ double Calculator::multiply(double a, double b)
 
 long long Calculator::LCM(long long a, long long b)
 {
-    long long maxi = (a > b) ? a : b;
-
-    do
-    {
-        if (maxi % n1 == 0 && maxi % n2 == 0)
-        {
-            return maxi;
-        }
-        else
-            maxi++;
-    }
+    return (a * b) / GCD(a, b);
 }
 
 double Calculator::subtract(double a, double b) {

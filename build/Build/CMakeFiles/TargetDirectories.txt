@@ -1,0 +1,3 @@
+C:/Users/moham/OneDrive/Desktop/project/CS2-Calculator-AboElfotouh-Eskandrani/build/Build/CMakeFiles/Functional_Calculator.dir
+C:/Users/moham/OneDrive/Desktop/project/CS2-Calculator-AboElfotouh-Eskandrani/build/Build/CMakeFiles/edit_cache.dir
+C:/Users/moham/OneDrive/Desktop/project/CS2-Calculator-AboElfotouh-Eskandrani/build/Build/CMakeFiles/rebuild_cache.dir

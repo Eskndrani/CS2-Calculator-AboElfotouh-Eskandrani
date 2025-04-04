@@ -27,7 +27,7 @@ double Calculator::subtract(double a, double b) {
 
 double Calculator::divide(double a, double b) {
     if (b == 0) {
-        std::cerr << "Error: Division by zero!" << std::endl;
+        cerr << "Error: Division by zero!" << endl;
         return 0;
     }
     return a / b;
@@ -52,7 +52,7 @@ long long Calculator::GCD(long long a, long long b) {
 
 long long Calculator::Random(long long a, long long b) {
     if (a > b) {
-        std::cerr << "Error: Invalid range for random number!" << std::endl;
+        cerr << "Error: Invalid range for random number!" << endl;
         return a;
     }
     return rand() % (b - a + 1) + a;
@@ -84,9 +84,9 @@ double applyOp(double a, double b, char op) {
     return 0;
 }
 
-double Calculator::evaluateExpression(const std::string &expression) {
-    std::stack<double> values;
-    std::stack<char> ops;
+double Calculator::evaluateExpression(const string &expression) {
+    stack<double> values;
+    stack<char> ops;
     int i = 0;
     while (i < expression.length()) {
         if (isspace(expression[i])) {
@@ -94,7 +94,7 @@ double Calculator::evaluateExpression(const std::string &expression) {
             continue;
         }
         if (isdigit(expression[i]) || expression[i] == '.') {
-            std::string val;
+            string val;
             while (i < expression.length() && (isdigit(expression[i]) || expression[i] == '.')) {
                 val.push_back(expression[i]);
                 i++;

@@ -1,24 +1,27 @@
-#ifndef CALCULATOR_H_INCLUDED
-#define CALCULATOR_H_INCLUDED
+#ifndef CALCULATOR_H
+#define CALCULATOR_H
 
-class Calculator
-{
+#include <string>
+
+class Calculator {
 public:
     double add(double a, double b);
 
     double multiply(double a, double b);
 
+    double subtract(double a, double b);
+
+    double divide(double a, double b);
+
+    long long factorial(long long num);
+
+    long long GCD(long long a, long long b);
+
     long long LCM(long long a, long long b);
 
-    double subtract(double, double);
-
-    double divide(double, double);
-
-    long long factorial(long long);
-
-    long long GCD(long long, long long);
-
-    long long Random(long long, long long);
+    long long Random(long long a, long long b);
+    
+    double evaluateExpression(const std::string &expression);
 };
 
-#endif // CALCULATOR_H_INCLUDED
+#endif // CALCULATOR_H

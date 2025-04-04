@@ -1,5 +1,6 @@
 #include "Calculator.h"
 #include <iostream>
+#include <string>
 using namespace std;
 
 int main() {
@@ -20,8 +21,10 @@ int main() {
         cout << "7. LCM" << endl;
         cout << "8. Random Number Generation" << endl;
         cout << "9. Exit" << endl;
-        cout << "Enter your choice (1-9): ";
+        cout << "10. Evaluate Mathematical Expression" << endl;
+        cout << "Enter your choice: ";
         cin >> choice;
+        cin.ignore();
 
         switch (choice) {
             case 1:
@@ -70,6 +73,16 @@ int main() {
                 cin >> int1 >> int2;
                 cout << "Random number between " << int1 << " and " << int2 << " is: " << calc.Random(int1, int2) << endl;
                 break;
+            case 10: {
+                cout << "Enter a mathematical expression (e.g., 3 + 4 * (2 - 1) / 5): ";
+                std::string expr;
+                getline(cin, expr);
+                if(expr.empty()) {
+                    getline(cin, expr);
+                }
+                cout << "Result: " << calc.evaluateExpression(expr) << endl;
+                break;
+            }
             case 9:
                 cout << "Exiting the calculator. Goodbye!" << endl;
                 break;

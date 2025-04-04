@@ -75,7 +75,7 @@ int main() {
                 break;
             case 10: {
                 cout << "Enter a mathematical expression (e.g., 3 + 4 * (2 - 1) / 5): ";
-                std::string expr;
+                string expr;
                 getline(cin, expr);
                 if(expr.empty()) {
                     getline(cin, expr);
